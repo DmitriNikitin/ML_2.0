@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.10.4"
+
+# Команды для установки зависимостей
+install:
+  - pip install -r requirements.txt
+
+# Команды для запуска тестов
+script:
+  - pytest tests/
+
