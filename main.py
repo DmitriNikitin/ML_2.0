@@ -21,7 +21,7 @@ app = FastAPI()
 async def predict():
     # использование модели для предсказания
     predictions = my_model.predict(x_test)
-    return {"Значение первого элемента в тестовых данных": int(np.argmax(predictions[0]))}
+    return {"Значение первого элемент в тестовых данных": int(np.argmax(predictions[0]))}
 
 # запуск приложения
 if __name__ == "__main__":
