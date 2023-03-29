@@ -16,7 +16,7 @@ my_model = keras.models.load_model('my_model.h5')
 # создание экземпляра FastAPI
 app = FastAPI()
 
-# путь для вашего API
+# путь для  API
 @app.get("/predict")
 async def predict():
     # использование модели для предсказания
