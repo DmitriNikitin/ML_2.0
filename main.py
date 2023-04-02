@@ -7,7 +7,7 @@ from fastapi import FastAPI
 mnist = keras.datasets.mnist
 (_, _), (x_test, y_test) = mnist.load_data()
 
-# нормализация данных
+
 x_test = x_test / 255.0
 
 # загрузка сохраненной модели
